@@ -31,6 +31,8 @@ async def chamar_api(prompt: str) -> str:
         Suas intruções são baseadas em estágios, aqui está o estágio atual da sua interação com o cliente.
 
         {json.dumps(SellerStates[HistoryStates[-1]]["SystemPrompt"])}
+
+        Responda de acordo com o idioma do cliente
     '''
 
     messages[0] = {"role": "system", "content": systemPrompt}
@@ -48,15 +50,15 @@ async def chamar_api(prompt: str) -> str:
 
 async def main():
 
-    print("Bem-vindo ao chat interativo com histórico!")
-    print("Digite 'sair' para encerrar.\n")
+    print("Welcome to the chat integrated with GPTStateMachine!")
+    print("Type 'exit' to end the chat.\n")
 
     print(f"\n")
-    print(f"Assistant: Olá, tudo bem?\n")
+    print(f"Assistant: Hello, how are you?")
     messages.append({"role": "assistant", "content": 'Olá, tudo bem?'})
     
     while True:
-        usuario = input("Você: ")
+        usuario = input("You: ")
         if usuario.strip().lower() in ["sair", "exit", "quit"]:
             print("Encerrando o chat. Até logo!")
             break

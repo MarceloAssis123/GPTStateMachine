@@ -57,6 +57,6 @@ async def GPTStateClassifier(HistoryState, States, messages):
     result = json.loads(response.choices[0].message.content)
 
     newState = result["newState"]
-    print(f'Novo Estado: {newState}')
+    print(f'New State: {newState}')
     
     return newState
