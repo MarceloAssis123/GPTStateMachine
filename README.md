@@ -43,8 +43,11 @@ OPENAI_API_KEY="your-key-here"
 
 ## 📜 Usage Example
 
-![Example Interaction Positive](assets/InteractionPositive.png)
-![Example Interaction Negative](assets/InteractionNegative.png)
+![Photo of the Example Interaction Positive](assets/InteractionPositive.png)
+![Photo of the Example Interaction Negative](assets/InteractionNegative.png)
+
+## State Machine Diagram used in the example
+![Photo of the State Machine Diagram used in the example](assets/StateMachineDiagram.png)
 
 ## 📄 License
 
